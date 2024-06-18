@@ -1,23 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import About from './Pages/About';
+import Home from './Pages/Home';
+import FetchApi from './Pages/FetchApi';
+import NavBar from './NavBar';
 
 function App() {
+  const styles = {
+    fontSize: '3rem',
+    fontStyle: 'bold',
+    color: '#fff',
+    textAlign: 'center'
+  }
+
   return (
     <div className="App">
       <header className="App-header">
+        <div><Link style={styles} to="/">React</Link></div>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <div className="App-body">
+        =====================================
+        Routing Learning {'<BrowserRouter/>'} in index.js
+        <br/>
+        <NavBar />
+        <br/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/fetch-api" element={<FetchApi />} />
+        </Routes>
+      </div>
     </div>
   );
 }
