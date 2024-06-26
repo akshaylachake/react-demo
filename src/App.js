@@ -5,6 +5,13 @@ import About from './Pages/About';
 import Home from './Pages/Home';
 import FetchApi from './Pages/FetchApi';
 import NavBar from './NavBar';
+import UseStateHook from './Pages/UseStateHook';
+import UseEffectHook from './Pages/UseEffectHook';
+import UseReducerHook from './Pages/UseReducerHook';
+import UseRefHook from './Pages/UseRefHook';
+import UseLayoutEffectHook from './Pages/UseLayoutEffectHook';
+import UseImperativeHandleHook from './Pages/UseImperativeHandleHook';
+import UseContextHook from './Pages/UseContextHook';
 
 function App() {
   const styles = {
@@ -30,6 +37,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/fetch-api" element={<FetchApi />} />
+          <Route path="/use-state-hook" element={<UseStateHook />} />
+          <Route path="/use-reducer-hook" element={<UseReducerHook />} />
+          <Route path="/use-effect-hook" element={<UseEffectHook />} />
+          <Route path="/use-ref-hook" element={<UseRefHook />} />
+          <Route path="/use-layout-effect-hook" element={<UseLayoutEffectHook />} />
+          <Route path="/use-imperative-handle-hook" element={<UseImperativeHandleHook />} />
+          <Route path="/use-context-hook" element={<UseContextHook />} />
         </Routes>
       </div>
     </div>
