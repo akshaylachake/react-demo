@@ -17,6 +17,7 @@ function NavBar() {
         </ul>
       </li>
       <li><Link to="/fetch-api">FetchApi</Link></li>
+      <li><Link to="/dynamic-inputs">Dynamic Inputs</Link></li>
     </ul>
   )
 }

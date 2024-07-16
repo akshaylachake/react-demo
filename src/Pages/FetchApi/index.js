@@ -82,7 +82,7 @@ function FetchApi() {
     }
     
     return (
-        <div className="App">
+        <div>
             <p>
                 On every type search option api get triggered after 1 sec once user stops typing; <b>Example For</b> Debouncing, Fetch, Async / Await 
             </p>

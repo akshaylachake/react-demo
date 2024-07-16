@@ -12,6 +12,7 @@ import UseRefHook from './Pages/UseRefHook';
 import UseLayoutEffectHook from './Pages/UseLayoutEffectHook';
 import UseImperativeHandleHook from './Pages/UseImperativeHandleHook';
 import UseContextHook from './Pages/UseContextHook';
+import DynamicInputs from './Pages/DynamicInputs';
 
 function App() {
   const styles = {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/fetch-api" element={<FetchApi />} />
+          <Route path="/dynamic-inputs" element={<DynamicInputs />} />
           <Route path="/use-state-hook" element={<UseStateHook />} />
           <Route path="/use-reducer-hook" element={<UseReducerHook />} />
           <Route path="/use-effect-hook" element={<UseEffectHook />} />
