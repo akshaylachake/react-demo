@@ -15,7 +15,6 @@ import UseContextHook from "./Pages/UseContextHook";
 import DynamicInputs from "./Pages/DynamicInputs";
 
 function App() {
-  console.log("app file");
   const styles = {
     fontSize: "3rem",
     fontStyle: "bold",
