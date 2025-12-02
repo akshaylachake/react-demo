@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import About from "./Pages/About";
+import DebounceThrottle from "./Pages/DebounceThrottle";
 import Home from "./Pages/Home";
 import FetchApi from "./Pages/FetchApi";
 import NavBar from "./NavBar";
@@ -41,6 +42,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/debounce-throttle" element={<DebounceThrottle />} />
           <Route path="/fetch-api" element={<FetchApi />} />
           <Route path="/dynamic-inputs" element={<DynamicInputs />} />
           <Route path="/use-state-hook" element={<UseStateHook />} />
