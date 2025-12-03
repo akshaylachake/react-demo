@@ -2,7 +2,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import About from "./Pages/About";
-import DebounceThrottle from "./Pages/DebounceThrottle";
 import Home from "./Pages/Home";
 import FetchApi from "./Pages/FetchApi";
 import NavBar from "./NavBar";
@@ -16,6 +15,9 @@ import UseContextHook from "./Pages/UseContextHook";
 import UseMemo from "./Pages/UseMemo";
 import UseCallBack from "./Pages/UseCallBack";
 import DynamicInputs from "./Pages/DynamicInputs";
+import DigitalClock from "./Pages/DigitalClock";
+import DebounceThrottle from "./Pages/DebounceThrottle";
+import CheckboxGroup from "./Pages/CheckboxGroup";
 
 function App() {
   const styles = {
@@ -46,7 +48,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/debounce-throttle" element={<DebounceThrottle />} />
           <Route path="/fetch-api" element={<FetchApi />} />
-          <Route path="/dynamic-inputs" element={<DynamicInputs />} />
           <Route path="/use-state-hook" element={<UseStateHook />} />
           <Route path="/use-reducer-hook" element={<UseReducerHook />} />
           <Route path="/use-effect-hook" element={<UseEffectHook />} />
@@ -62,6 +63,10 @@ function App() {
           <Route path="/use-context-hook" element={<UseContextHook />} />
           <Route path="/use-memo" element={<UseMemo />} />
           <Route path="/use-callback" element={<UseCallBack />} />
+          <Route path="/dynamic-inputs" element={<DynamicInputs />} />
+          <Route path="/digital-clock" element={<DigitalClock />} />
+          <Route path="/digital-clock" element={<DigitalClock />} />
+          <Route path="/checkbox-group" element={<CheckboxGroup />} />
         </Routes>
       </div>
     </div>

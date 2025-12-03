@@ -8,9 +8,6 @@ function NavBar() {
         <Link to="/about">About</Link>
       </li>
       <li>
-        <Link to="/debounce-throttle">Debouncing and Throttling</Link>
-      </li>
-      <li>
         {" "}
         Hooks
         <ul>
@@ -48,6 +45,15 @@ function NavBar() {
       </li>
       <li>
         <Link to="/dynamic-inputs">Dynamic Inputs</Link>
+      </li>
+      <li>
+        <Link to="/digital-clock">Digital Clock</Link>
+      </li>
+      <li>
+        <Link to="/debounce-throttle">Debouncing and Throttling</Link>
+      </li>
+      <li>
+        <Link to="/checkbox-group">Checkbox Group</Link>
       </li>
     </ul>
   );
