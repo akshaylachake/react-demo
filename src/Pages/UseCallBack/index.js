@@ -25,6 +25,6 @@ export default function UseCallBack() {
 }
 
 const Child = React.memo(({ onClick }) => {
-  console.log("Child render");
+  console.log("Child render"); // reders only once if onClick changes
   return <button onClick={onClick}>Child Button</button>;
 });

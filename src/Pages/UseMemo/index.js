@@ -3,14 +3,9 @@ import { useMemo, useState } from "react";
 export default function UseMemo() {
   const [count, setCount] = useState(0);
   const [query, setQuery] = useState("");
-  const bigList = Array.from(
-    { length: 20000 },
-    (_, i) => `item-${i}-${Math.floor(Math.random() * 100)}`
-  ); // simulating a big list with random numbers
 
   const filtered = useMemo(() => {
-    console.log("Filtering...");
-    return bigList.filter((item) => item.includes(query));
+    console.log("Filtering...", query);
   }, [query]); // recompute ONLY when query changes
 
   return (
@@ -22,7 +17,7 @@ export default function UseMemo() {
       computed results
       <br />
       <input onChange={(e) => setQuery(e.target.value)} />
-      <div>Filtered items: {filtered?.length}</div>
+      <div>Check console to see useMemo effect</div>
       <button onClick={() => setCount((c) => c + 1)}>
         Re-render Component {count}
       </button>
