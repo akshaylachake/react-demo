@@ -6,6 +6,7 @@ export default function UseMemo() {
 
   const filtered = useMemo(() => {
     console.log("Filtering...", query);
+    return query;
   }, [query]); // recompute ONLY when query changes
 
   return (
@@ -17,7 +18,7 @@ export default function UseMemo() {
       computed results
       <br />
       <input onChange={(e) => setQuery(e.target.value)} />
-      <div>Check console to see useMemo effect</div>
+      <div>Filtered query: {filtered}</div>
       <button onClick={() => setCount((c) => c + 1)}>
         Re-render Component {count}
       </button>
