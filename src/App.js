@@ -13,6 +13,8 @@ import UseRefHook from "./Pages/UseRefHook";
 import UseLayoutEffectHook from "./Pages/UseLayoutEffectHook";
 import UseImperativeHandleHook from "./Pages/UseImperativeHandleHook";
 import UseContextHook from "./Pages/UseContextHook";
+import UseMemo from "./Pages/UseMemo";
+import UseCallBack from "./Pages/UseCallBack";
 import DynamicInputs from "./Pages/DynamicInputs";
 
 function App() {
@@ -58,6 +60,8 @@ function App() {
             element={<UseImperativeHandleHook />}
           />
           <Route path="/use-context-hook" element={<UseContextHook />} />
+          <Route path="/use-memo" element={<UseMemo />} />
+          <Route path="/use-callback" element={<UseCallBack />} />
         </Routes>
       </div>
     </div>

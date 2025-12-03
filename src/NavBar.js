@@ -35,6 +35,15 @@ function NavBar() {
           <li>
             <Link to="/use-context-hook">useContextHook()</Link>
           </li>
+          <li>
+            <Link to="/use-context-hook">useContextHook()</Link>
+          </li>
+          <li>
+            <Link to="/use-memo">useMemo()</Link>
+          </li>
+          <li>
+            <Link to="/use-callback">useCallback()</Link>
+          </li>
         </ul>
       </li>
       <li>
